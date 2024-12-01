@@ -85,27 +85,22 @@ def update_cpu_usage(cpu_bar):
         figure_plot_ram.plot(data['time'], data['ram usage'], color='green', label="RAM Usage")
 
         if plot_sieve == True:
-            print(1)
             figure_plot_cpu.plot(benchmark_data['time'], benchmark_data['cpu usage'], color='red', label="Sieve Benchmark CPU Usage")
             figure_plot_ram.plot(benchmark_data['time'], benchmark_data['ram usage'], color='red', label="Sieve Benchmark RAM Usage")
 
         if plot_aritmetic == True:
-            print(2)
             figure_plot_cpu.plot(benchmark_data['time'], benchmark_data['cpu usage'], color='red', label="Aritmetic Operations Benchmark CPU Usage")
             figure_plot_ram.plot(benchmark_data['time'], benchmark_data['ram usage'], color='red', label="Aritmetic Operations Benchmark RAM Usage")
 
         if plot_logic == True:
-            print(3)
             figure_plot_cpu.plot(benchmark_data['time'], benchmark_data['cpu usage'], color='red', label="Logic Operations Benchmark CPU Usage")
             figure_plot_ram.plot(benchmark_data['time'], benchmark_data['ram usage'], color='red', label="Logic Operations Benchmark RAM Usage")
 
         if plot_data == True:
-            print(4)
             figure_plot_cpu.plot(benchmark_data['time'], benchmark_data['cpu usage'], color='red', label="DISK Data Transfer Speed Benchmark CPU Usage")
             figure_plot_ram.plot(benchmark_data['time'], benchmark_data['ram usage'], color='red', label="DISK Data Transfer Speed Benchmark RAM Usage")
 
         if plot_ram == True:
-            print(5)
             figure_plot_cpu.plot(benchmark_data['time'], benchmark_data['cpu usage'], color='red', label="RAM Data Transfer Speed Benchmark CPU Usage")
             figure_plot_ram.plot(benchmark_data['time'], benchmark_data['ram usage'], color='red', label="RAM Data Transfer Speed Benchmark RAM Usage")
 
